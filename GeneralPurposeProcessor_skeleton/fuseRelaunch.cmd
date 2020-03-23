@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/UMBC G Drive/CMSC 313/Spring 2020/Projects/Project 2/Skeleton_v1/GeneralPurposeProcessor/RegFile_RegFile_sch_tb_isim_beh.exe" -prj "D:/UMBC G Drive/CMSC 313/Spring 2020/Projects/Project 2/Skeleton_v1/GeneralPurposeProcessor/RegFile_RegFile_sch_tb_beh.prj" "work.RegFile_RegFile_sch_tb" 

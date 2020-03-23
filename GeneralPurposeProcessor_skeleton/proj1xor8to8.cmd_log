@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym proj1xor8to8 /home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/proj1xor8to8.sch /home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/proj1xor8to8.sym 

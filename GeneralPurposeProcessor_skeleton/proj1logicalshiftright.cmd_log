@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym proj1logicalshiftright /home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/proj1logicalshiftright.sch /home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/proj1logicalshiftright.sym 

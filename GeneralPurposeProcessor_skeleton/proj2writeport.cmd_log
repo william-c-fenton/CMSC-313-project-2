@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym proj2writeport /home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/proj2writeport.sch /home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/proj2writeport.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym proj2writeport /home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/proj2writeport.sch /home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/proj2writeport.sym 

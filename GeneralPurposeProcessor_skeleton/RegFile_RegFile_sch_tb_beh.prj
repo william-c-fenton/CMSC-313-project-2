@@ -1,0 +1,5 @@
+vhdl work "proj2writeport.vhf"
+vhdl work "proj2reg8to8.vhf"
+vhdl work "proj2readport8to8.vhf"
+vhdl work "RegFile.vhf"
+vhdl work "RegFile_tb.vhd"

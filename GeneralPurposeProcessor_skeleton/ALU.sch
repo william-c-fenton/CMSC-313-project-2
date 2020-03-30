@@ -27,26 +27,13 @@
         <signal name="B(7:0)" />
         <signal name="A(7:0)" />
         <signal name="OPCODE(2:0)" />
-        <signal name="XLXN_162(2:0)" />
-        <signal name="XLXN_163(7:0)" />
         <signal name="XLXN_165(7:0)" />
-        <signal name="XLXN_166(7:0)" />
-        <signal name="XLXN_167(7:0)" />
         <signal name="XLXN_168(7:0)" />
-        <signal name="XLXN_169(7:0)" />
-        <signal name="XLXN_170(7:0)" />
         <signal name="XLXN_171(7:0)" />
         <signal name="XLXN_172(7:0)" />
-        <signal name="XLXN_173(7:0)" />
-        <signal name="XLXN_174" />
         <signal name="XLXN_175(7:0)" />
-        <signal name="XLXN_176" />
-        <signal name="XLXN_178(7:0)" />
         <signal name="XLXN_179(7:0)" />
-        <signal name="XLXN_180(7:0)" />
         <signal name="XLXN_182(7:0)" />
-        <signal name="XLXN_183(7:0)" />
-        <signal name="XLXN_184(7:0)" />
         <port polarity="Output" name="O(7:0)" />
         <port polarity="Output" name="C" />
         <port polarity="Output" name="Z" />
@@ -143,16 +130,6 @@
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <rect width="256" x="64" y="-576" height="640" />
         </blockdef>
-        <blockdef name="proj1xor8to8">
-            <timestamp>2020-3-23T18:21:3</timestamp>
-            <rect width="256" x="64" y="-128" height="128" />
-            <rect width="64" x="0" y="-108" height="24" />
-            <line x2="0" y1="-96" y2="-96" x1="64" />
-            <rect width="64" x="0" y="-44" height="24" />
-            <line x2="0" y1="-32" y2="-32" x1="64" />
-            <rect width="64" x="320" y="-108" height="24" />
-            <line x2="384" y1="-96" y2="-96" x1="320" />
-        </blockdef>
         <blockdef name="proj1AND8to8">
             <timestamp>2020-3-5T23:19:30</timestamp>
             <rect width="256" x="64" y="-192" height="192" />
@@ -195,16 +172,26 @@
             <line x2="384" y1="-96" y2="-96" x1="320" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
+        <blockdef name="proj1multiplier8to8">
+            <timestamp>2020-3-23T18:33:4</timestamp>
+            <rect width="256" x="64" y="-128" height="128" />
+            <rect width="64" x="0" y="-108" height="24" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="64" x="320" y="-108" height="24" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
+        </blockdef>
         <blockdef name="proj1logicalshiftright">
-            <timestamp>2020-3-23T18:20:57</timestamp>
+            <timestamp>2020-3-30T19:0:8</timestamp>
             <rect width="256" x="64" y="-64" height="64" />
             <rect width="64" x="0" y="-44" height="24" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <rect width="64" x="320" y="-44" height="24" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
-        <blockdef name="proj1multiplier8to8">
-            <timestamp>2020-3-23T18:33:4</timestamp>
+        <blockdef name="proj1xor8to8">
+            <timestamp>2020-3-30T18:59:52</timestamp>
             <rect width="256" x="64" y="-128" height="128" />
             <rect width="64" x="0" y="-108" height="24" />
             <line x2="0" y1="-96" y2="-96" x1="64" />
@@ -272,11 +259,6 @@
             <blockpin signalname="XLXN_182(7:0)" name="H(7:0)" />
             <blockpin signalname="O(7:0)" name="Output(7:0)" />
         </block>
-        <block symbolname="proj1xor8to8" name="XLXI_78">
-            <blockpin signalname="B(7:0)" name="B(7:0)" />
-            <blockpin signalname="A(7:0)" name="A(7:0)" />
-            <blockpin signalname="XLXN_165(7:0)" name="output(7:0)" />
-        </block>
         <block symbolname="proj1AND8to8" name="XLXI_79">
             <blockpin signalname="A(7:0)" name="A(7:0)" />
             <blockpin signalname="B(7:0)" name="B(7:0)" />
@@ -299,10 +281,6 @@
             <blockpin signalname="XLXN_175(7:0)" name="p1sOut(7:0)" />
             <blockpin signalname="sub_overflow" name="borrowOut" />
         </block>
-        <block symbolname="proj1logicalshiftright" name="XLXI_83">
-            <blockpin signalname="B(7:0)" name="B(7:0)" />
-            <blockpin signalname="XLXN_179(7:0)" name="output(7:0)" />
-        </block>
         <block symbolname="proj1multiplier8to8" name="XLXI_84">
             <blockpin signalname="A(7:0)" name="A(7:0)" />
             <blockpin signalname="B(7:0)" name="B(7:0)" />
@@ -310,6 +288,15 @@
         </block>
         <block symbolname="vcc" name="XLXI_85">
             <blockpin signalname="mul_overflow" name="P" />
+        </block>
+        <block symbolname="proj1logicalshiftright" name="XLXI_86">
+            <blockpin signalname="B(7:0)" name="B(7:0)" />
+            <blockpin signalname="XLXN_179(7:0)" name="Output(7:0)" />
+        </block>
+        <block symbolname="proj1xor8to8" name="XLXI_87">
+            <blockpin signalname="B(7:0)" name="B(7:0)" />
+            <blockpin signalname="A(7:0)" name="A(7:0)" />
+            <blockpin signalname="XLXN_165(7:0)" name="Output(7:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -459,8 +446,6 @@
         <iomarker fontsize="28" x="208" y="1200" name="OPCODE(2:0)" orien="R180" />
         <instance x="960" y="848" name="XLXI_76" orien="R0">
         </instance>
-        <instance x="480" y="192" name="XLXI_78" orien="R0">
-        </instance>
         <branch name="XLXN_165(7:0)">
             <wire x2="912" y1="96" y2="96" x1="864" />
             <wire x2="912" y1="96" y2="368" x1="912" />
@@ -519,8 +504,6 @@
             <wire x2="480" y1="96" y2="96" x1="432" />
             <wire x2="432" y1="96" y2="304" x1="432" />
         </branch>
-        <instance x="416" y="1616" name="XLXI_83" orien="R0">
-        </instance>
         <branch name="XLXN_179(7:0)">
             <wire x2="848" y1="1584" y2="1584" x1="800" />
             <wire x2="848" y1="752" y2="1584" x1="848" />
@@ -534,5 +517,9 @@
             <wire x2="832" y1="816" y2="1696" x1="832" />
             <wire x2="960" y1="816" y2="816" x1="832" />
         </branch>
+        <instance x="416" y="1616" name="XLXI_86" orien="R0">
+        </instance>
+        <instance x="480" y="192" name="XLXI_87" orien="R0">
+        </instance>
     </sheet>
 </drawing>

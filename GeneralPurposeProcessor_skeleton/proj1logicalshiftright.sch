@@ -7,14 +7,12 @@
     </attr>
     <netlist>
         <signal name="B(7:0)" />
-        <signal name="output(7:0)" />
-        <signal name="XLXN_4" />
-        <signal name="output(7)" />
-        <signal name="output(6:0)" />
+        <signal name="Output(7:0)" />
+        <signal name="Output(6:0)" />
         <signal name="B(7:1)" />
-        <signal name="XLXN_8" />
+        <signal name="Output(7)" />
         <port polarity="Input" name="B(7:0)" />
-        <port polarity="Output" name="output(7:0)" />
+        <port polarity="Output" name="Output(7:0)" />
         <blockdef name="gnd">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-64" y2="-96" x1="64" />
@@ -33,38 +31,31 @@
             <line x2="64" y1="-64" y2="0" x1="64" />
         </blockdef>
         <block symbolname="gnd" name="XLXI_1">
-            <blockpin signalname="output(7)" name="G" />
+            <blockpin signalname="Output(7)" name="G" />
         </block>
-        <block symbolname="buf" name="buf(6:0)">
+        <block symbolname="buf" name="Buf(6:0)">
             <blockpin signalname="B(7:1)" name="I" />
-            <blockpin signalname="output(6:0)" name="O" />
+            <blockpin signalname="Output(6:0)" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
         <branch name="B(7:0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="730" y="768" type="branch" />
-            <wire x2="730" y1="768" y2="768" x1="464" />
-            <wire x2="992" y1="768" y2="768" x1="730" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="730" y="768" type="branch" />
+            <wire x2="992" y1="768" y2="768" x1="464" />
             <wire x2="1024" y1="768" y2="768" x1="992" />
         </branch>
         <iomarker fontsize="28" x="464" y="768" name="B(7:0)" orien="R180" />
-        <branch name="output(7:0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2522" y="752" type="branch" />
+        <branch name="Output(7:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2522" y="752" type="branch" />
             <wire x2="2368" y1="752" y2="752" x1="2352" />
             <wire x2="2416" y1="752" y2="752" x1="2368" />
-            <wire x2="2522" y1="752" y2="752" x1="2416" />
-            <wire x2="2640" y1="752" y2="752" x1="2522" />
+            <wire x2="2640" y1="752" y2="752" x1="2416" />
         </branch>
-        <iomarker fontsize="28" x="2640" y="752" name="output(7:0)" orien="R0" />
+        <iomarker fontsize="28" x="2640" y="752" name="Output(7:0)" orien="R0" />
         <bustap x2="2368" y1="752" y2="848" x1="2368" />
         <bustap x2="2416" y1="752" y2="656" x1="2416" />
-        <branch name="output(7)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2368" y="879" type="branch" />
-            <wire x2="2368" y1="848" y2="879" x1="2368" />
-            <wire x2="2368" y1="879" y2="960" x1="2368" />
-        </branch>
         <instance x="2304" y="1088" name="XLXI_1" orien="R0" />
-        <branch name="output(6:0)">
+        <branch name="Output(6:0)">
             <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2416" y="560" type="branch" />
             <wire x2="2416" y1="400" y2="400" x1="1664" />
             <wire x2="2416" y1="400" y2="560" x1="2416" />
@@ -73,14 +64,18 @@
         <bustap x2="992" y1="768" y2="672" x1="992" />
         <branch name="B(7:1)">
             <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="992" y="528" type="branch" />
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="992" y="596" type="branch" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="992" y="596" type="branch" />
             <wire x2="1440" y1="400" y2="400" x1="992" />
             <wire x2="992" y1="400" y2="528" x1="992" />
-            <wire x2="992" y1="528" y2="596" x1="992" />
-            <wire x2="992" y1="596" y2="672" x1="992" />
+            <wire x2="992" y1="528" y2="672" x1="992" />
         </branch>
-        <instance x="1440" y="432" name="buf(6:0)" orien="R0">
+        <instance x="1440" y="432" name="Buf(6:0)" orien="R0">
             <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="0" y="-64" type="instance" />
         </instance>
+        <branch name="Output(7)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2368" y="907" type="branch" />
+            <wire x2="2368" y1="848" y2="912" x1="2368" />
+            <wire x2="2368" y1="912" y2="960" x1="2368" />
+        </branch>
     </sheet>
 </drawing>

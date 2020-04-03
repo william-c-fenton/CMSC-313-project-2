@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : proj1FullAdder1to1.vhf
--- /___/   /\     Timestamp : 02/21/2020 08:52:33
+-- /___/   /\     Timestamp : 02/21/2020 10:24:16
 -- \   \  /  \ 
 --  \___\/\___\ 
 --

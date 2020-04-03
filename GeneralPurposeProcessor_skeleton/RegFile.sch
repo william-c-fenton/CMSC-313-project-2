@@ -13,17 +13,11 @@
         <signal name="clk" />
         <signal name="R_data_a(7:0)" />
         <signal name="R_data_b(7:0)" />
-        <signal name="XLXN_2(1:0)" />
-        <signal name="XLXN_3(7:0)" />
         <signal name="XLXN_4(7:0)" />
         <signal name="XLXN_5(7:0)" />
-        <signal name="XLXN_6(7:0)" />
-        <signal name="XLXN_7(7:0)" />
         <signal name="XLXN_8(7:0)" />
         <signal name="XLXN_9(7:0)" />
         <signal name="W_enable" />
-        <signal name="XLXN_11" />
-        <signal name="XLXN_17(7:0)" />
         <signal name="XLXN_18" />
         <signal name="XLXN_19" />
         <signal name="XLXN_20" />

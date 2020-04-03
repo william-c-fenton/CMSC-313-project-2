@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : proj2readport8to8.vhf
--- /___/   /\     Timestamp : 02/21/2020 08:52:34
+-- /___/   /\     Timestamp : 02/21/2020 10:24:18
 -- \   \  /  \ 
 --  \___\/\___\ 
 --

@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : RegFile.vhf
--- /___/   /\     Timestamp : 02/21/2020 08:52:35
+-- /___/   /\     Timestamp : 02/21/2020 10:24:11
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -173,14 +173,14 @@ architecture BEHAVIORAL of proj2readport8to8_MUSER_RegFile is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_54";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_55";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_56";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_57";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_58";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_59";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_60";
-   attribute HU_SET of XLXI_8 : label is "XLXI_8_61";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_0";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_1";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_2";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_3";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_4";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_5";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_6";
+   attribute HU_SET of XLXI_8 : label is "XLXI_8_7";
 begin
    XLXI_1 : M4_1E_HXILINX_RegFile
       port map (D0=>A(7),

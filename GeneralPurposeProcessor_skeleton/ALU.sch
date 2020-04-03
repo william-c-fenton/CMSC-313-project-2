@@ -172,16 +172,6 @@
             <line x2="384" y1="-96" y2="-96" x1="320" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
-        <blockdef name="proj1multiplier8to8">
-            <timestamp>2020-3-23T18:33:4</timestamp>
-            <rect width="256" x="64" y="-128" height="128" />
-            <rect width="64" x="0" y="-108" height="24" />
-            <line x2="0" y1="-96" y2="-96" x1="64" />
-            <rect width="64" x="0" y="-44" height="24" />
-            <line x2="0" y1="-32" y2="-32" x1="64" />
-            <rect width="64" x="320" y="-108" height="24" />
-            <line x2="384" y1="-96" y2="-96" x1="320" />
-        </blockdef>
         <blockdef name="proj1logicalshiftright">
             <timestamp>2020-3-30T19:0:8</timestamp>
             <rect width="256" x="64" y="-64" height="64" />
@@ -199,6 +189,17 @@
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <rect width="64" x="320" y="-108" height="24" />
             <line x2="384" y1="-96" y2="-96" x1="320" />
+        </blockdef>
+        <blockdef name="proj1multiplier8to8">
+            <timestamp>2020-4-3T20:55:12</timestamp>
+            <rect width="256" x="64" y="-128" height="128" />
+            <rect width="64" x="0" y="-108" height="24" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="64" x="320" y="-108" height="24" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <block symbolname="EqualityComp_8" name="XLXI_26">
             <blockpin signalname="XLXN_55(7:0)" name="a(7:0)" />
@@ -281,14 +282,6 @@
             <blockpin signalname="XLXN_175(7:0)" name="p1sOut(7:0)" />
             <blockpin signalname="sub_overflow" name="borrowOut" />
         </block>
-        <block symbolname="proj1multiplier8to8" name="XLXI_84">
-            <blockpin signalname="A(7:0)" name="A(7:0)" />
-            <blockpin signalname="B(7:0)" name="B(7:0)" />
-            <blockpin signalname="XLXN_182(7:0)" name="O(7:0)" />
-        </block>
-        <block symbolname="vcc" name="XLXI_85">
-            <blockpin signalname="mul_overflow" name="P" />
-        </block>
         <block symbolname="proj1logicalshiftright" name="XLXI_86">
             <blockpin signalname="B(7:0)" name="B(7:0)" />
             <blockpin signalname="XLXN_179(7:0)" name="Output(7:0)" />
@@ -298,11 +291,16 @@
             <blockpin signalname="A(7:0)" name="A(7:0)" />
             <blockpin signalname="XLXN_165(7:0)" name="Output(7:0)" />
         </block>
+        <block symbolname="proj1multiplier8to8" name="XLXI_88">
+            <blockpin signalname="A(7:0)" name="A(7:0)" />
+            <blockpin signalname="B(7:0)" name="B(7:0)" />
+            <blockpin signalname="XLXN_182(7:0)" name="O(7:0)" />
+            <blockpin signalname="mul_overflow" name="OverflowSignal" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
         <branch name="O(7:0)">
-            <wire x2="1360" y1="880" y2="880" x1="1344" />
-            <wire x2="1392" y1="880" y2="880" x1="1360" />
+            <wire x2="1392" y1="880" y2="880" x1="1344" />
             <wire x2="1536" y1="592" y2="592" x1="1392" />
             <wire x2="1920" y1="592" y2="592" x1="1536" />
             <wire x2="1536" y1="592" y2="1280" x1="1536" />
@@ -387,7 +385,9 @@
         </branch>
         <branch name="mul_overflow">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2096" y="2240" type="branch" />
-            <wire x2="2096" y1="2240" y2="2240" x1="1920" />
+            <wire x2="1408" y1="1760" y2="1760" x1="800" />
+            <wire x2="1408" y1="1760" y2="2240" x1="1408" />
+            <wire x2="2096" y1="2240" y2="2240" x1="1408" />
             <wire x2="2208" y1="2240" y2="2240" x1="2096" />
         </branch>
         <iomarker fontsize="28" x="2720" y="2016" name="C" orien="R0" />
@@ -509,9 +509,6 @@
             <wire x2="848" y1="752" y2="1584" x1="848" />
             <wire x2="960" y1="752" y2="752" x1="848" />
         </branch>
-        <instance x="416" y="1792" name="XLXI_84" orien="R0">
-        </instance>
-        <instance x="1920" y="2304" name="XLXI_85" orien="R270" />
         <branch name="XLXN_182(7:0)">
             <wire x2="832" y1="1696" y2="1696" x1="800" />
             <wire x2="832" y1="816" y2="1696" x1="832" />
@@ -520,6 +517,8 @@
         <instance x="416" y="1616" name="XLXI_86" orien="R0">
         </instance>
         <instance x="480" y="192" name="XLXI_87" orien="R0">
+        </instance>
+        <instance x="416" y="1792" name="XLXI_88" orien="R0">
         </instance>
     </sheet>
 </drawing>

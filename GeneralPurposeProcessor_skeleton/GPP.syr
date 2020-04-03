@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Reading design: GPP.prj
@@ -203,14 +203,14 @@ Parsing architecture <BEHAVIORAL> of entity <controlalu>.
 Parsing VHDL file "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/ALU.vhf" into library work
 Parsing entity <M8_1E_HXILINX_ALU>.
 Parsing architecture <M8_1E_HXILINX_ALU_V> of entity <m8_1e_hxilinx_alu>.
-Parsing entity <proj1xor8to8_MUSER_ALU>.
-Parsing architecture <BEHAVIORAL> of entity <proj1xor8to8_muser_alu>.
-Parsing entity <proj1logicalshiftright_MUSER_ALU>.
-Parsing architecture <BEHAVIORAL> of entity <proj1logicalshiftright_muser_alu>.
 Parsing entity <proj1FullAdder1to1_MUSER_ALU>.
 Parsing architecture <BEHAVIORAL> of entity <proj1fulladder1to1_muser_alu>.
 Parsing entity <proj1multiplier8to8_MUSER_ALU>.
 Parsing architecture <BEHAVIORAL> of entity <proj1multiplier8to8_muser_alu>.
+Parsing entity <proj1xor8to8_MUSER_ALU>.
+Parsing architecture <BEHAVIORAL> of entity <proj1xor8to8_muser_alu>.
+Parsing entity <proj1logicalshiftright_MUSER_ALU>.
+Parsing architecture <BEHAVIORAL> of entity <proj1logicalshiftright_muser_alu>.
 Parsing entity <proj1Subtractor8to8_MUSER_ALU>.
 Parsing architecture <BEHAVIORAL> of entity <proj1subtractor8to8_muser_alu>.
 Parsing entity <proj1Adder8to8_MUSER_ALU>.
@@ -228,14 +228,14 @@ Parsing entity <M8_1E_HXILINX_GPP>.
 Parsing architecture <M8_1E_HXILINX_GPP_V> of entity <m8_1e_hxilinx_gpp>.
 Parsing entity <M4_1E_HXILINX_GPP>.
 Parsing architecture <M4_1E_HXILINX_GPP_V> of entity <m4_1e_hxilinx_gpp>.
-Parsing entity <proj1xor8to8_MUSER_GPP>.
-Parsing architecture <BEHAVIORAL> of entity <proj1xor8to8_muser_gpp>.
-Parsing entity <proj1logicalshiftright_MUSER_GPP>.
-Parsing architecture <BEHAVIORAL> of entity <proj1logicalshiftright_muser_gpp>.
 Parsing entity <proj1FullAdder1to1_MUSER_GPP>.
 Parsing architecture <BEHAVIORAL> of entity <proj1fulladder1to1_muser_gpp>.
 Parsing entity <proj1multiplier8to8_MUSER_GPP>.
 Parsing architecture <BEHAVIORAL> of entity <proj1multiplier8to8_muser_gpp>.
+Parsing entity <proj1xor8to8_MUSER_GPP>.
+Parsing architecture <BEHAVIORAL> of entity <proj1xor8to8_muser_gpp>.
+Parsing entity <proj1logicalshiftright_MUSER_GPP>.
+Parsing architecture <BEHAVIORAL> of entity <proj1logicalshiftright_muser_gpp>.
 Parsing entity <proj1Subtractor8to8_MUSER_GPP>.
 Parsing architecture <BEHAVIORAL> of entity <proj1subtractor8to8_muser_gpp>.
 Parsing entity <proj1Adder8to8_MUSER_GPP>.
@@ -291,14 +291,14 @@ Elaborating entity <M8_1E_HXILINX_GPP> (architecture <M8_1E_HXILINX_GPP_V>) from
 INFO:HDLCompiler:679 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 64. Case statement is complete. others clause is never selected
 
 Elaborating entity <proj1mux8to8_MUSER_GPP> (architecture <BEHAVIORAL>) from library <work>.
-WARNING:HDLCompiler:634 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 1727: Net <XLXI_1_E_openSignal> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 1728: Net <XLXI_4_E_openSignal> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 1729: Net <XLXI_6_E_openSignal> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 1730: Net <XLXI_7_E_openSignal> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 1731: Net <XLXI_8_E_openSignal> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 1732: Net <XLXI_9_E_openSignal> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 1733: Net <XLXI_10_E_openSignal> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 1734: Net <XLXI_11_E_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 1728: Net <XLXI_1_E_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 1729: Net <XLXI_4_E_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 1730: Net <XLXI_6_E_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 1731: Net <XLXI_7_E_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 1732: Net <XLXI_8_E_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 1733: Net <XLXI_9_E_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 1734: Net <XLXI_10_E_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 1735: Net <XLXI_11_E_openSignal> does not have a driver.
 
 Elaborating entity <proj1AND8to8_MUSER_GPP> (architecture <BEHAVIORAL>) from library <work>.
 
@@ -310,11 +310,11 @@ Elaborating entity <proj1FullAdder1to1_MUSER_GPP> (architecture <BEHAVIORAL>) fr
 
 Elaborating entity <proj1Subtractor8to8_MUSER_GPP> (architecture <BEHAVIORAL>) from library <work>.
 
-Elaborating entity <proj1multiplier8to8_MUSER_GPP> (architecture <BEHAVIORAL>) from library <work>.
-
 Elaborating entity <proj1logicalshiftright_MUSER_GPP> (architecture <BEHAVIORAL>) from library <work>.
 
 Elaborating entity <proj1xor8to8_MUSER_GPP> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <proj1multiplier8to8_MUSER_GPP> (architecture <BEHAVIORAL>) from library <work>.
 
 Elaborating entity <Mux2_8> (architecture <Behavioral>) with generics from library <work>.
 
@@ -386,7 +386,7 @@ Unit <RegParallelLoad_1_MUSER_GPP> synthesized.
 
 Synthesizing Unit <ALU_MUSER_GPP>.
     Related source file is "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf".
-    Set property "HU_SET = XLXI_41_79" for instance <XLXI_41>.
+    Set property "HU_SET = XLXI_41_25" for instance <XLXI_41>.
     Summary:
 	no macro.
 Unit <ALU_MUSER_GPP> synthesized.
@@ -407,14 +407,14 @@ Unit <M8_1E_HXILINX_GPP> synthesized.
 
 Synthesizing Unit <proj1mux8to8_MUSER_GPP>.
     Related source file is "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf".
-    Set property "HU_SET = XLXI_1_71" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_4_72" for instance <XLXI_4>.
-    Set property "HU_SET = XLXI_6_73" for instance <XLXI_6>.
-    Set property "HU_SET = XLXI_7_74" for instance <XLXI_7>.
-    Set property "HU_SET = XLXI_8_75" for instance <XLXI_8>.
-    Set property "HU_SET = XLXI_9_76" for instance <XLXI_9>.
-    Set property "HU_SET = XLXI_10_77" for instance <XLXI_10>.
-    Set property "HU_SET = XLXI_11_78" for instance <XLXI_11>.
+    Set property "HU_SET = XLXI_1_17" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_4_18" for instance <XLXI_4>.
+    Set property "HU_SET = XLXI_6_19" for instance <XLXI_6>.
+    Set property "HU_SET = XLXI_7_20" for instance <XLXI_7>.
+    Set property "HU_SET = XLXI_8_21" for instance <XLXI_8>.
+    Set property "HU_SET = XLXI_9_22" for instance <XLXI_9>.
+    Set property "HU_SET = XLXI_10_23" for instance <XLXI_10>.
+    Set property "HU_SET = XLXI_11_24" for instance <XLXI_11>.
 WARNING:Xst:653 - Signal <XLXI_1_E_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <XLXI_4_E_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <XLXI_6_E_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -457,27 +457,6 @@ Synthesizing Unit <proj1Subtractor8to8_MUSER_GPP>.
 	no macro.
 Unit <proj1Subtractor8to8_MUSER_GPP> synthesized.
 
-Synthesizing Unit <proj1multiplier8to8_MUSER_GPP>.
-    Related source file is "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf".
-INFO:Xst:3210 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" line 1210: Output port <Carryout> of the instance <XLXI_608> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" line 1210: Output port <Output> of the instance <XLXI_608> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" line 1217: Output port <Carryout> of the instance <XLXI_609> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" line 1217: Output port <Output> of the instance <XLXI_609> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" line 1224: Output port <Carryout> of the instance <XLXI_610> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" line 1224: Output port <Output> of the instance <XLXI_610> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" line 1231: Output port <Carryout> of the instance <XLXI_611> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" line 1231: Output port <Output> of the instance <XLXI_611> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" line 1238: Output port <Carryout> of the instance <XLXI_612> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" line 1238: Output port <Output> of the instance <XLXI_612> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" line 1245: Output port <Carryout> of the instance <XLXI_613> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" line 1245: Output port <Output> of the instance <XLXI_613> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" line 1252: Output port <Carryout> of the instance <XLXI_614> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" line 1252: Output port <Output> of the instance <XLXI_614> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" line 1297: Output port <Carryout> of the instance <XLXI_623> is unconnected or connected to loadless signal.
-    Summary:
-	no macro.
-Unit <proj1multiplier8to8_MUSER_GPP> synthesized.
-
 Synthesizing Unit <proj1logicalshiftright_MUSER_GPP>.
     Related source file is "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf".
 WARNING:Xst:647 - Input <B<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -490,6 +469,26 @@ Synthesizing Unit <proj1xor8to8_MUSER_GPP>.
     Summary:
 	no macro.
 Unit <proj1xor8to8_MUSER_GPP> synthesized.
+
+Synthesizing Unit <proj1multiplier8to8_MUSER_GPP>.
+    Related source file is "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf".
+INFO:Xst:3210 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" line 1085: Output port <Carryout> of the instance <XLXI_608> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" line 1085: Output port <Output> of the instance <XLXI_608> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" line 1092: Output port <Carryout> of the instance <XLXI_609> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" line 1092: Output port <Output> of the instance <XLXI_609> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" line 1099: Output port <Carryout> of the instance <XLXI_610> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" line 1099: Output port <Output> of the instance <XLXI_610> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" line 1106: Output port <Carryout> of the instance <XLXI_611> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" line 1106: Output port <Output> of the instance <XLXI_611> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" line 1113: Output port <Carryout> of the instance <XLXI_612> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" line 1113: Output port <Output> of the instance <XLXI_612> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" line 1120: Output port <Carryout> of the instance <XLXI_613> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" line 1120: Output port <Output> of the instance <XLXI_613> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" line 1127: Output port <Carryout> of the instance <XLXI_614> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" line 1127: Output port <Output> of the instance <XLXI_614> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <proj1multiplier8to8_MUSER_GPP> synthesized.
 
 Synthesizing Unit <Mux2_8>.
     Related source file is "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/Mux2_8.vhd".
@@ -515,8 +514,8 @@ Unit <Mux16_9> synthesized.
 
 Synthesizing Unit <Instruction_Decoder_MUSER_GPP>.
     Related source file is "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf".
-    Set property "HU_SET = XLXI_29_88" for instance <XLXI_29>.
-    Set property "HU_SET = XLXI_30_89" for instance <XLXI_30>.
+    Set property "HU_SET = XLXI_29_34" for instance <XLXI_29>.
+    Set property "HU_SET = XLXI_30_35" for instance <XLXI_30>.
 WARNING:Xst:647 - Input <OPCODE<2:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
@@ -544,14 +543,14 @@ Unit <proj2reg8to8_MUSER_GPP> synthesized.
 
 Synthesizing Unit <proj2readport8to8_MUSER_GPP>.
     Related source file is "/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf".
-    Set property "HU_SET = XLXI_1_80" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_2_81" for instance <XLXI_2>.
-    Set property "HU_SET = XLXI_3_82" for instance <XLXI_3>.
-    Set property "HU_SET = XLXI_4_83" for instance <XLXI_4>.
-    Set property "HU_SET = XLXI_5_84" for instance <XLXI_5>.
-    Set property "HU_SET = XLXI_6_85" for instance <XLXI_6>.
-    Set property "HU_SET = XLXI_7_86" for instance <XLXI_7>.
-    Set property "HU_SET = XLXI_8_87" for instance <XLXI_8>.
+    Set property "HU_SET = XLXI_1_26" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_2_27" for instance <XLXI_2>.
+    Set property "HU_SET = XLXI_3_28" for instance <XLXI_3>.
+    Set property "HU_SET = XLXI_4_29" for instance <XLXI_4>.
+    Set property "HU_SET = XLXI_5_30" for instance <XLXI_5>.
+    Set property "HU_SET = XLXI_6_31" for instance <XLXI_6>.
+    Set property "HU_SET = XLXI_7_32" for instance <XLXI_7>.
+    Set property "HU_SET = XLXI_8_33" for instance <XLXI_8>.
     Summary:
 	no macro.
 Unit <proj2readport8to8_MUSER_GPP> synthesized.
@@ -775,7 +774,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 27.250ns (frequency: 36.698MHz)
-  Total number of paths / destination ports: 1642 / 43
+  Total number of paths / destination ports: 39226 / 43
 -------------------------------------------------------------------------
 Delay:               27.250ns (Levels of Logic = 26)
   Source:            PROGRAM_COUNTER/q_temp[3]_dff_2_2 (FF)
@@ -823,7 +822,7 @@ Delay:               27.250ns (Levels of Logic = 26)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 33 / 1
+  Total number of paths / destination ports: 1425 / 1
 -------------------------------------------------------------------------
 Offset:              25.924ns (Levels of Logic = 24)
   Source:            Input<0> (PAD)
@@ -900,15 +899,15 @@ clk            |   27.250|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 7.08 secs
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 8.20 secs
  
 --> 
 
 
-Total memory usage is 502300 kilobytes
+Total memory usage is 502196 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   20 (   0 filtered)
-Number of infos    :   17 (   0 filtered)
+Number of infos    :   16 (   0 filtered)
 

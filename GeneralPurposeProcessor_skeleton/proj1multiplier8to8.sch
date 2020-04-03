@@ -210,9 +210,11 @@
         <signal name="XLXN_1236" />
         <signal name="XLXN_1237" />
         <signal name="XLXN_1239" />
+        <signal name="OverflowSignal" />
         <port polarity="Input" name="A(7:0)" />
         <port polarity="Input" name="B(7:0)" />
         <port polarity="Output" name="O(7:0)" />
+        <port polarity="Output" name="OverflowSignal" />
         <blockdef name="proj1FullAdder1to1">
             <timestamp>2020-3-3T22:20:12</timestamp>
             <rect width="256" x="64" y="-192" height="192" />
@@ -1025,7 +1027,7 @@
             <blockpin signalname="XLXN_1239" name="A" />
             <blockpin signalname="XLXN_1149" name="B" />
             <blockpin signalname="XLXN_1175" name="Carryin" />
-            <blockpin name="Carryout" />
+            <blockpin signalname="OverflowSignal" name="Carryout" />
             <blockpin signalname="O(7)" name="Output" />
         </block>
         <block symbolname="and2" name="XLXI_624">
@@ -3004,5 +3006,9 @@
             <wire x2="4896" y1="5216" y2="5248" x1="4896" />
             <wire x2="4896" y1="5248" y2="5296" x1="4896" />
         </branch>
+        <branch name="OverflowSignal">
+            <wire x2="1728" y1="5600" y2="5840" x1="1728" />
+        </branch>
+        <iomarker fontsize="28" x="1728" y="5840" name="OverflowSignal" orien="R90" />
     </sheet>
 </drawing>

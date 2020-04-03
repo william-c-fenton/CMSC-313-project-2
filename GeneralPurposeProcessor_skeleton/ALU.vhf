@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ALU.vhf
--- /___/   /\     Timestamp : 02/21/2020 08:52:35
+-- /___/   /\     Timestamp : 02/21/2020 10:24:12
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -66,132 +66,6 @@ begin
     end if;
     end process; 
 end M8_1E_HXILINX_ALU_V;
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity proj1xor8to8_MUSER_ALU is
-   port ( A      : in    std_logic_vector (7 downto 0); 
-          B      : in    std_logic_vector (7 downto 0); 
-          Output : out   std_logic_vector (7 downto 0));
-end proj1xor8to8_MUSER_ALU;
-
-architecture BEHAVIORAL of proj1xor8to8_MUSER_ALU is
-   attribute BOX_TYPE   : string ;
-   component XOR2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of XOR2 : component is "BLACK_BOX";
-   
-begin
-   XLXI_1 : XOR2
-      port map (I0=>B(0),
-                I1=>A(0),
-                O=>Output(0));
-   
-   XLXI_2 : XOR2
-      port map (I0=>B(1),
-                I1=>A(1),
-                O=>Output(1));
-   
-   XLXI_3 : XOR2
-      port map (I0=>B(2),
-                I1=>A(2),
-                O=>Output(2));
-   
-   XLXI_4 : XOR2
-      port map (I0=>B(3),
-                I1=>A(3),
-                O=>Output(3));
-   
-   XLXI_5 : XOR2
-      port map (I0=>B(4),
-                I1=>A(4),
-                O=>Output(4));
-   
-   XLXI_6 : XOR2
-      port map (I0=>B(5),
-                I1=>A(5),
-                O=>Output(5));
-   
-   XLXI_7 : XOR2
-      port map (I0=>B(6),
-                I1=>A(6),
-                O=>Output(6));
-   
-   XLXI_8 : XOR2
-      port map (I0=>B(7),
-                I1=>A(7),
-                O=>Output(7));
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity proj1logicalshiftright_MUSER_ALU is
-   port ( B      : in    std_logic_vector (7 downto 0); 
-          Output : out   std_logic_vector (7 downto 0));
-end proj1logicalshiftright_MUSER_ALU;
-
-architecture BEHAVIORAL of proj1logicalshiftright_MUSER_ALU is
-   attribute BOX_TYPE   : string ;
-   component BUF
-      port ( I : in    std_logic; 
-             O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of BUF : component is "BLACK_BOX";
-   
-   component GND
-      port ( G : out   std_logic);
-   end component;
-   attribute BOX_TYPE of GND : component is "BLACK_BOX";
-   
-begin
-   Buf_0 : BUF
-      port map (I=>B(1),
-                O=>Output(0));
-   
-   Buf_1 : BUF
-      port map (I=>B(2),
-                O=>Output(1));
-   
-   Buf_2 : BUF
-      port map (I=>B(3),
-                O=>Output(2));
-   
-   Buf_3 : BUF
-      port map (I=>B(4),
-                O=>Output(3));
-   
-   Buf_4 : BUF
-      port map (I=>B(5),
-                O=>Output(4));
-   
-   Buf_5 : BUF
-      port map (I=>B(6),
-                O=>Output(5));
-   
-   Buf_6 : BUF
-      port map (I=>B(7),
-                O=>Output(6));
-   
-   XLXI_1 : GND
-      port map (G=>Output(7));
-   
-end BEHAVIORAL;
-
-
 
 library ieee;
 use ieee.std_logic_1164.ALL;
@@ -270,190 +144,191 @@ library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
 entity proj1multiplier8to8_MUSER_ALU is
-   port ( A : in    std_logic_vector (7 downto 0); 
-          B : in    std_logic_vector (7 downto 0); 
-          O : out   std_logic_vector (7 downto 0));
+   port ( A              : in    std_logic_vector (7 downto 0); 
+          B              : in    std_logic_vector (7 downto 0); 
+          O              : out   std_logic_vector (7 downto 0); 
+          OverflowSignal : out   std_logic);
 end proj1multiplier8to8_MUSER_ALU;
 
 architecture BEHAVIORAL of proj1multiplier8to8_MUSER_ALU is
    attribute BOX_TYPE   : string ;
-   signal XLXN_3    : std_logic;
-   signal XLXN_4    : std_logic;
-   signal XLXN_5    : std_logic;
-   signal XLXN_6    : std_logic;
-   signal XLXN_7    : std_logic;
-   signal XLXN_8    : std_logic;
-   signal XLXN_9    : std_logic;
-   signal XLXN_10   : std_logic;
-   signal XLXN_12   : std_logic;
-   signal XLXN_95   : std_logic;
-   signal XLXN_97   : std_logic;
-   signal XLXN_118  : std_logic;
-   signal XLXN_119  : std_logic;
-   signal XLXN_122  : std_logic;
-   signal XLXN_123  : std_logic;
-   signal XLXN_124  : std_logic;
-   signal XLXN_125  : std_logic;
-   signal XLXN_126  : std_logic;
-   signal XLXN_200  : std_logic;
-   signal XLXN_201  : std_logic;
-   signal XLXN_203  : std_logic;
-   signal XLXN_204  : std_logic;
-   signal XLXN_205  : std_logic;
-   signal XLXN_206  : std_logic;
-   signal XLXN_207  : std_logic;
-   signal XLXN_215  : std_logic;
-   signal XLXN_216  : std_logic;
-   signal XLXN_217  : std_logic;
-   signal XLXN_218  : std_logic;
-   signal XLXN_219  : std_logic;
-   signal XLXN_220  : std_logic;
-   signal XLXN_221  : std_logic;
-   signal XLXN_226  : std_logic;
-   signal XLXN_254  : std_logic;
-   signal XLXN_256  : std_logic;
-   signal XLXN_257  : std_logic;
-   signal XLXN_258  : std_logic;
-   signal XLXN_259  : std_logic;
-   signal XLXN_260  : std_logic;
-   signal XLXN_261  : std_logic;
-   signal XLXN_262  : std_logic;
-   signal XLXN_267  : std_logic;
-   signal XLXN_268  : std_logic;
-   signal XLXN_272  : std_logic;
-   signal XLXN_273  : std_logic;
-   signal XLXN_274  : std_logic;
-   signal XLXN_275  : std_logic;
-   signal XLXN_276  : std_logic;
-   signal XLXN_277  : std_logic;
-   signal XLXN_278  : std_logic;
-   signal XLXN_279  : std_logic;
-   signal XLXN_280  : std_logic;
-   signal XLXN_281  : std_logic;
-   signal XLXN_283  : std_logic;
-   signal XLXN_284  : std_logic;
-   signal XLXN_287  : std_logic;
-   signal XLXN_297  : std_logic;
-   signal XLXN_298  : std_logic;
-   signal XLXN_299  : std_logic;
-   signal XLXN_300  : std_logic;
-   signal XLXN_301  : std_logic;
-   signal XLXN_302  : std_logic;
-   signal XLXN_303  : std_logic;
-   signal XLXN_304  : std_logic;
-   signal XLXN_305  : std_logic;
-   signal XLXN_310  : std_logic;
-   signal XLXN_315  : std_logic;
-   signal XLXN_316  : std_logic;
-   signal XLXN_317  : std_logic;
-   signal XLXN_318  : std_logic;
-   signal XLXN_319  : std_logic;
-   signal XLXN_320  : std_logic;
-   signal XLXN_356  : std_logic;
-   signal XLXN_358  : std_logic;
-   signal XLXN_359  : std_logic;
-   signal XLXN_360  : std_logic;
-   signal XLXN_361  : std_logic;
-   signal XLXN_362  : std_logic;
-   signal XLXN_883  : std_logic;
-   signal XLXN_1073 : std_logic;
-   signal XLXN_1074 : std_logic;
-   signal XLXN_1075 : std_logic;
-   signal XLXN_1079 : std_logic;
-   signal XLXN_1080 : std_logic;
-   signal XLXN_1081 : std_logic;
-   signal XLXN_1082 : std_logic;
-   signal XLXN_1083 : std_logic;
-   signal XLXN_1084 : std_logic;
-   signal XLXN_1085 : std_logic;
-   signal XLXN_1086 : std_logic;
-   signal XLXN_1095 : std_logic;
-   signal XLXN_1096 : std_logic;
-   signal XLXN_1097 : std_logic;
-   signal XLXN_1098 : std_logic;
-   signal XLXN_1099 : std_logic;
-   signal XLXN_1100 : std_logic;
-   signal XLXN_1101 : std_logic;
-   signal XLXN_1102 : std_logic;
-   signal XLXN_1103 : std_logic;
-   signal XLXN_1104 : std_logic;
-   signal XLXN_1105 : std_logic;
-   signal XLXN_1106 : std_logic;
-   signal XLXN_1107 : std_logic;
-   signal XLXN_1114 : std_logic;
-   signal XLXN_1115 : std_logic;
-   signal XLXN_1116 : std_logic;
-   signal XLXN_1117 : std_logic;
-   signal XLXN_1118 : std_logic;
-   signal XLXN_1121 : std_logic;
-   signal XLXN_1122 : std_logic;
-   signal XLXN_1125 : std_logic;
-   signal XLXN_1126 : std_logic;
-   signal XLXN_1127 : std_logic;
-   signal XLXN_1131 : std_logic;
-   signal XLXN_1132 : std_logic;
-   signal XLXN_1133 : std_logic;
-   signal XLXN_1134 : std_logic;
-   signal XLXN_1135 : std_logic;
-   signal XLXN_1136 : std_logic;
-   signal XLXN_1137 : std_logic;
-   signal XLXN_1138 : std_logic;
-   signal XLXN_1148 : std_logic;
-   signal XLXN_1149 : std_logic;
-   signal XLXN_1150 : std_logic;
-   signal XLXN_1151 : std_logic;
-   signal XLXN_1152 : std_logic;
-   signal XLXN_1153 : std_logic;
-   signal XLXN_1154 : std_logic;
-   signal XLXN_1155 : std_logic;
-   signal XLXN_1156 : std_logic;
-   signal XLXN_1157 : std_logic;
-   signal XLXN_1158 : std_logic;
-   signal XLXN_1159 : std_logic;
-   signal XLXN_1160 : std_logic;
-   signal XLXN_1167 : std_logic;
-   signal XLXN_1168 : std_logic;
-   signal XLXN_1169 : std_logic;
-   signal XLXN_1170 : std_logic;
-   signal XLXN_1171 : std_logic;
-   signal XLXN_1175 : std_logic;
-   signal XLXN_1184 : std_logic;
-   signal XLXN_1185 : std_logic;
-   signal XLXN_1188 : std_logic;
-   signal XLXN_1189 : std_logic;
-   signal XLXN_1192 : std_logic;
-   signal XLXN_1193 : std_logic;
-   signal XLXN_1194 : std_logic;
-   signal XLXN_1195 : std_logic;
-   signal XLXN_1196 : std_logic;
-   signal XLXN_1197 : std_logic;
-   signal XLXN_1198 : std_logic;
-   signal XLXN_1199 : std_logic;
-   signal XLXN_1200 : std_logic;
-   signal XLXN_1201 : std_logic;
-   signal XLXN_1202 : std_logic;
-   signal XLXN_1203 : std_logic;
-   signal XLXN_1204 : std_logic;
-   signal XLXN_1205 : std_logic;
-   signal XLXN_1206 : std_logic;
-   signal XLXN_1211 : std_logic;
-   signal XLXN_1212 : std_logic;
-   signal XLXN_1213 : std_logic;
-   signal XLXN_1218 : std_logic;
-   signal XLXN_1219 : std_logic;
-   signal XLXN_1220 : std_logic;
-   signal XLXN_1221 : std_logic;
-   signal XLXN_1222 : std_logic;
-   signal XLXN_1223 : std_logic;
-   signal XLXN_1224 : std_logic;
-   signal XLXN_1225 : std_logic;
-   signal XLXN_1226 : std_logic;
-   signal XLXN_1227 : std_logic;
-   signal XLXN_1228 : std_logic;
-   signal XLXN_1229 : std_logic;
-   signal XLXN_1236 : std_logic;
-   signal XLXN_1237 : std_logic;
-   signal XLXN_1239 : std_logic;
+   signal XLXN_3         : std_logic;
+   signal XLXN_4         : std_logic;
+   signal XLXN_5         : std_logic;
+   signal XLXN_6         : std_logic;
+   signal XLXN_7         : std_logic;
+   signal XLXN_8         : std_logic;
+   signal XLXN_9         : std_logic;
+   signal XLXN_10        : std_logic;
+   signal XLXN_12        : std_logic;
+   signal XLXN_95        : std_logic;
+   signal XLXN_97        : std_logic;
+   signal XLXN_118       : std_logic;
+   signal XLXN_119       : std_logic;
+   signal XLXN_122       : std_logic;
+   signal XLXN_123       : std_logic;
+   signal XLXN_124       : std_logic;
+   signal XLXN_125       : std_logic;
+   signal XLXN_126       : std_logic;
+   signal XLXN_200       : std_logic;
+   signal XLXN_201       : std_logic;
+   signal XLXN_203       : std_logic;
+   signal XLXN_204       : std_logic;
+   signal XLXN_205       : std_logic;
+   signal XLXN_206       : std_logic;
+   signal XLXN_207       : std_logic;
+   signal XLXN_215       : std_logic;
+   signal XLXN_216       : std_logic;
+   signal XLXN_217       : std_logic;
+   signal XLXN_218       : std_logic;
+   signal XLXN_219       : std_logic;
+   signal XLXN_220       : std_logic;
+   signal XLXN_221       : std_logic;
+   signal XLXN_226       : std_logic;
+   signal XLXN_254       : std_logic;
+   signal XLXN_256       : std_logic;
+   signal XLXN_257       : std_logic;
+   signal XLXN_258       : std_logic;
+   signal XLXN_259       : std_logic;
+   signal XLXN_260       : std_logic;
+   signal XLXN_261       : std_logic;
+   signal XLXN_262       : std_logic;
+   signal XLXN_267       : std_logic;
+   signal XLXN_268       : std_logic;
+   signal XLXN_272       : std_logic;
+   signal XLXN_273       : std_logic;
+   signal XLXN_274       : std_logic;
+   signal XLXN_275       : std_logic;
+   signal XLXN_276       : std_logic;
+   signal XLXN_277       : std_logic;
+   signal XLXN_278       : std_logic;
+   signal XLXN_279       : std_logic;
+   signal XLXN_280       : std_logic;
+   signal XLXN_281       : std_logic;
+   signal XLXN_283       : std_logic;
+   signal XLXN_284       : std_logic;
+   signal XLXN_287       : std_logic;
+   signal XLXN_297       : std_logic;
+   signal XLXN_298       : std_logic;
+   signal XLXN_299       : std_logic;
+   signal XLXN_300       : std_logic;
+   signal XLXN_301       : std_logic;
+   signal XLXN_302       : std_logic;
+   signal XLXN_303       : std_logic;
+   signal XLXN_304       : std_logic;
+   signal XLXN_305       : std_logic;
+   signal XLXN_310       : std_logic;
+   signal XLXN_315       : std_logic;
+   signal XLXN_316       : std_logic;
+   signal XLXN_317       : std_logic;
+   signal XLXN_318       : std_logic;
+   signal XLXN_319       : std_logic;
+   signal XLXN_320       : std_logic;
+   signal XLXN_356       : std_logic;
+   signal XLXN_358       : std_logic;
+   signal XLXN_359       : std_logic;
+   signal XLXN_360       : std_logic;
+   signal XLXN_361       : std_logic;
+   signal XLXN_362       : std_logic;
+   signal XLXN_883       : std_logic;
+   signal XLXN_1073      : std_logic;
+   signal XLXN_1074      : std_logic;
+   signal XLXN_1075      : std_logic;
+   signal XLXN_1079      : std_logic;
+   signal XLXN_1080      : std_logic;
+   signal XLXN_1081      : std_logic;
+   signal XLXN_1082      : std_logic;
+   signal XLXN_1083      : std_logic;
+   signal XLXN_1084      : std_logic;
+   signal XLXN_1085      : std_logic;
+   signal XLXN_1086      : std_logic;
+   signal XLXN_1095      : std_logic;
+   signal XLXN_1096      : std_logic;
+   signal XLXN_1097      : std_logic;
+   signal XLXN_1098      : std_logic;
+   signal XLXN_1099      : std_logic;
+   signal XLXN_1100      : std_logic;
+   signal XLXN_1101      : std_logic;
+   signal XLXN_1102      : std_logic;
+   signal XLXN_1103      : std_logic;
+   signal XLXN_1104      : std_logic;
+   signal XLXN_1105      : std_logic;
+   signal XLXN_1106      : std_logic;
+   signal XLXN_1107      : std_logic;
+   signal XLXN_1114      : std_logic;
+   signal XLXN_1115      : std_logic;
+   signal XLXN_1116      : std_logic;
+   signal XLXN_1117      : std_logic;
+   signal XLXN_1118      : std_logic;
+   signal XLXN_1121      : std_logic;
+   signal XLXN_1122      : std_logic;
+   signal XLXN_1125      : std_logic;
+   signal XLXN_1126      : std_logic;
+   signal XLXN_1127      : std_logic;
+   signal XLXN_1131      : std_logic;
+   signal XLXN_1132      : std_logic;
+   signal XLXN_1133      : std_logic;
+   signal XLXN_1134      : std_logic;
+   signal XLXN_1135      : std_logic;
+   signal XLXN_1136      : std_logic;
+   signal XLXN_1137      : std_logic;
+   signal XLXN_1138      : std_logic;
+   signal XLXN_1148      : std_logic;
+   signal XLXN_1149      : std_logic;
+   signal XLXN_1150      : std_logic;
+   signal XLXN_1151      : std_logic;
+   signal XLXN_1152      : std_logic;
+   signal XLXN_1153      : std_logic;
+   signal XLXN_1154      : std_logic;
+   signal XLXN_1155      : std_logic;
+   signal XLXN_1156      : std_logic;
+   signal XLXN_1157      : std_logic;
+   signal XLXN_1158      : std_logic;
+   signal XLXN_1159      : std_logic;
+   signal XLXN_1160      : std_logic;
+   signal XLXN_1167      : std_logic;
+   signal XLXN_1168      : std_logic;
+   signal XLXN_1169      : std_logic;
+   signal XLXN_1170      : std_logic;
+   signal XLXN_1171      : std_logic;
+   signal XLXN_1175      : std_logic;
+   signal XLXN_1184      : std_logic;
+   signal XLXN_1185      : std_logic;
+   signal XLXN_1188      : std_logic;
+   signal XLXN_1189      : std_logic;
+   signal XLXN_1192      : std_logic;
+   signal XLXN_1193      : std_logic;
+   signal XLXN_1194      : std_logic;
+   signal XLXN_1195      : std_logic;
+   signal XLXN_1196      : std_logic;
+   signal XLXN_1197      : std_logic;
+   signal XLXN_1198      : std_logic;
+   signal XLXN_1199      : std_logic;
+   signal XLXN_1200      : std_logic;
+   signal XLXN_1201      : std_logic;
+   signal XLXN_1202      : std_logic;
+   signal XLXN_1203      : std_logic;
+   signal XLXN_1204      : std_logic;
+   signal XLXN_1205      : std_logic;
+   signal XLXN_1206      : std_logic;
+   signal XLXN_1211      : std_logic;
+   signal XLXN_1212      : std_logic;
+   signal XLXN_1213      : std_logic;
+   signal XLXN_1218      : std_logic;
+   signal XLXN_1219      : std_logic;
+   signal XLXN_1220      : std_logic;
+   signal XLXN_1221      : std_logic;
+   signal XLXN_1222      : std_logic;
+   signal XLXN_1223      : std_logic;
+   signal XLXN_1224      : std_logic;
+   signal XLXN_1225      : std_logic;
+   signal XLXN_1226      : std_logic;
+   signal XLXN_1227      : std_logic;
+   signal XLXN_1228      : std_logic;
+   signal XLXN_1229      : std_logic;
+   signal XLXN_1236      : std_logic;
+   signal XLXN_1237      : std_logic;
+   signal XLXN_1239      : std_logic;
    component proj1FullAdder1to1_MUSER_ALU
       port ( A        : in    std_logic; 
              B        : in    std_logic; 
@@ -1259,13 +1134,139 @@ begin
       port map (A=>XLXN_1239,
                 B=>XLXN_1149,
                 Carryin=>XLXN_1175,
-                Carryout=>open,
+                Carryout=>OverflowSignal,
                 Output=>O(7));
    
    XLXI_624 : AND2
       port map (I0=>B(7),
                 I1=>A(0),
                 O=>XLXN_1239);
+   
+end BEHAVIORAL;
+
+
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
+entity proj1xor8to8_MUSER_ALU is
+   port ( A      : in    std_logic_vector (7 downto 0); 
+          B      : in    std_logic_vector (7 downto 0); 
+          Output : out   std_logic_vector (7 downto 0));
+end proj1xor8to8_MUSER_ALU;
+
+architecture BEHAVIORAL of proj1xor8to8_MUSER_ALU is
+   attribute BOX_TYPE   : string ;
+   component XOR2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of XOR2 : component is "BLACK_BOX";
+   
+begin
+   XLXI_1 : XOR2
+      port map (I0=>B(0),
+                I1=>A(0),
+                O=>Output(0));
+   
+   XLXI_2 : XOR2
+      port map (I0=>B(1),
+                I1=>A(1),
+                O=>Output(1));
+   
+   XLXI_3 : XOR2
+      port map (I0=>B(2),
+                I1=>A(2),
+                O=>Output(2));
+   
+   XLXI_4 : XOR2
+      port map (I0=>B(3),
+                I1=>A(3),
+                O=>Output(3));
+   
+   XLXI_5 : XOR2
+      port map (I0=>B(4),
+                I1=>A(4),
+                O=>Output(4));
+   
+   XLXI_6 : XOR2
+      port map (I0=>B(5),
+                I1=>A(5),
+                O=>Output(5));
+   
+   XLXI_7 : XOR2
+      port map (I0=>B(6),
+                I1=>A(6),
+                O=>Output(6));
+   
+   XLXI_8 : XOR2
+      port map (I0=>B(7),
+                I1=>A(7),
+                O=>Output(7));
+   
+end BEHAVIORAL;
+
+
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
+entity proj1logicalshiftright_MUSER_ALU is
+   port ( B      : in    std_logic_vector (7 downto 0); 
+          Output : out   std_logic_vector (7 downto 0));
+end proj1logicalshiftright_MUSER_ALU;
+
+architecture BEHAVIORAL of proj1logicalshiftright_MUSER_ALU is
+   attribute BOX_TYPE   : string ;
+   component BUF
+      port ( I : in    std_logic; 
+             O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of BUF : component is "BLACK_BOX";
+   
+   component GND
+      port ( G : out   std_logic);
+   end component;
+   attribute BOX_TYPE of GND : component is "BLACK_BOX";
+   
+begin
+   Buf_0 : BUF
+      port map (I=>B(1),
+                O=>Output(0));
+   
+   Buf_1 : BUF
+      port map (I=>B(2),
+                O=>Output(1));
+   
+   Buf_2 : BUF
+      port map (I=>B(3),
+                O=>Output(2));
+   
+   Buf_3 : BUF
+      port map (I=>B(4),
+                O=>Output(3));
+   
+   Buf_4 : BUF
+      port map (I=>B(5),
+                O=>Output(4));
+   
+   Buf_5 : BUF
+      port map (I=>B(6),
+                O=>Output(5));
+   
+   Buf_6 : BUF
+      port map (I=>B(7),
+                O=>Output(6));
+   
+   XLXI_1 : GND
+      port map (G=>Output(7));
    
 end BEHAVIORAL;
 
@@ -1709,14 +1710,14 @@ architecture BEHAVIORAL of proj1mux8to8_MUSER_ALU is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_62";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_63";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_64";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_65";
-   attribute HU_SET of XLXI_8 : label is "XLXI_8_66";
-   attribute HU_SET of XLXI_9 : label is "XLXI_9_67";
-   attribute HU_SET of XLXI_10 : label is "XLXI_10_68";
-   attribute HU_SET of XLXI_11 : label is "XLXI_11_69";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_8";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_9";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_10";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_11";
+   attribute HU_SET of XLXI_8 : label is "XLXI_8_12";
+   attribute HU_SET of XLXI_9 : label is "XLXI_9_13";
+   attribute HU_SET of XLXI_10 : label is "XLXI_10_14";
+   attribute HU_SET of XLXI_11 : label is "XLXI_11_15";
 begin
    XLXI_1 : M8_1E_HXILINX_ALU
       port map (D0=>A(0),
@@ -1955,12 +1956,6 @@ architecture BEHAVIORAL of ALU is
              borrowOut : out   std_logic);
    end component;
    
-   component proj1multiplier8to8_MUSER_ALU
-      port ( A : in    std_logic_vector (7 downto 0); 
-             B : in    std_logic_vector (7 downto 0); 
-             O : out   std_logic_vector (7 downto 0));
-   end component;
-   
    component proj1logicalshiftright_MUSER_ALU
       port ( B      : in    std_logic_vector (7 downto 0); 
              Output : out   std_logic_vector (7 downto 0));
@@ -1972,7 +1967,14 @@ architecture BEHAVIORAL of ALU is
              Output : out   std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_41 : label is "XLXI_41_70";
+   component proj1multiplier8to8_MUSER_ALU
+      port ( A              : in    std_logic_vector (7 downto 0); 
+             B              : in    std_logic_vector (7 downto 0); 
+             O              : out   std_logic_vector (7 downto 0); 
+             OverflowSignal : out   std_logic);
+   end component;
+   
+   attribute HU_SET of XLXI_41 : label is "XLXI_41_16";
 begin
    XLXN_55(7 downto 0) <= x"00";
    O(7 downto 0) <= O_DUMMY(7 downto 0);
@@ -2049,14 +2051,6 @@ begin
                 borrowOut=>sub_overflow,
                 p1sOut(7 downto 0)=>XLXN_175(7 downto 0));
    
-   XLXI_84 : proj1multiplier8to8_MUSER_ALU
-      port map (A(7 downto 0)=>A(7 downto 0),
-                B(7 downto 0)=>B(7 downto 0),
-                O(7 downto 0)=>XLXN_182(7 downto 0));
-   
-   XLXI_85 : VCC
-      port map (P=>mul_overflow);
-   
    XLXI_86 : proj1logicalshiftright_MUSER_ALU
       port map (B(7 downto 0)=>B(7 downto 0),
                 Output(7 downto 0)=>XLXN_179(7 downto 0));
@@ -2065,6 +2059,12 @@ begin
       port map (A(7 downto 0)=>A(7 downto 0),
                 B(7 downto 0)=>B(7 downto 0),
                 Output(7 downto 0)=>XLXN_165(7 downto 0));
+   
+   XLXI_88 : proj1multiplier8to8_MUSER_ALU
+      port map (A(7 downto 0)=>A(7 downto 0),
+                B(7 downto 0)=>B(7 downto 0),
+                O(7 downto 0)=>XLXN_182(7 downto 0),
+                OverflowSignal=>mul_overflow);
    
 end BEHAVIORAL;
 

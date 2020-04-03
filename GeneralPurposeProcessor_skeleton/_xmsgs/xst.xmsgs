@@ -5,115 +5,112 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 1727: Net &lt;<arg fmt="%s" index="1">XLXI_1_E_openSignal</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 1728: Net &lt;<arg fmt="%s" index="1">XLXI_1_E_openSignal</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 1728: Net &lt;<arg fmt="%s" index="1">XLXI_4_E_openSignal</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 1729: Net &lt;<arg fmt="%s" index="1">XLXI_4_E_openSignal</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 1729: Net &lt;<arg fmt="%s" index="1">XLXI_6_E_openSignal</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 1730: Net &lt;<arg fmt="%s" index="1">XLXI_6_E_openSignal</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 1730: Net &lt;<arg fmt="%s" index="1">XLXI_7_E_openSignal</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 1731: Net &lt;<arg fmt="%s" index="1">XLXI_7_E_openSignal</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 1731: Net &lt;<arg fmt="%s" index="1">XLXI_8_E_openSignal</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 1732: Net &lt;<arg fmt="%s" index="1">XLXI_8_E_openSignal</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 1732: Net &lt;<arg fmt="%s" index="1">XLXI_9_E_openSignal</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 1733: Net &lt;<arg fmt="%s" index="1">XLXI_9_E_openSignal</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 1733: Net &lt;<arg fmt="%s" index="1">XLXI_10_E_openSignal</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 1734: Net &lt;<arg fmt="%s" index="1">XLXI_10_E_openSignal</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 1734: Net &lt;<arg fmt="%s" index="1">XLXI_11_E_openSignal</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf" Line 1735: Net &lt;<arg fmt="%s" index="1">XLXI_11_E_openSignal</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="Xst" num="37" delta="old" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">BusWidth</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">BusWidth</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf</arg>&quot; line <arg fmt="%s" index="2">2684</arg>: Output port &lt;<arg fmt="%s" index="3">carry</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf</arg>&quot; line <arg fmt="%s" index="2">2684</arg>: Output port &lt;<arg fmt="%s" index="3">carry</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_1_E_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXI_1_E_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_4_E_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXI_4_E_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_6_E_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXI_6_E_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_7_E_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXI_7_E_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_8_E_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXI_8_E_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_9_E_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXI_9_E_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_10_E_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXI_10_E_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_11_E_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXI_11_E_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf</arg>&quot; line <arg fmt="%s" index="2">1210</arg>: Output port &lt;<arg fmt="%s" index="3">Carryout</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_608</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">B&lt;0:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf</arg>&quot; line <arg fmt="%s" index="2">1210</arg>: Output port &lt;<arg fmt="%s" index="3">Output</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_608</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf</arg>&quot; line <arg fmt="%s" index="2">1085</arg>: Output port &lt;<arg fmt="%s" index="3">Carryout</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_608</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf</arg>&quot; line <arg fmt="%s" index="2">1217</arg>: Output port &lt;<arg fmt="%s" index="3">Carryout</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_609</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf</arg>&quot; line <arg fmt="%s" index="2">1085</arg>: Output port &lt;<arg fmt="%s" index="3">Output</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_608</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf</arg>&quot; line <arg fmt="%s" index="2">1217</arg>: Output port &lt;<arg fmt="%s" index="3">Output</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_609</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf</arg>&quot; line <arg fmt="%s" index="2">1092</arg>: Output port &lt;<arg fmt="%s" index="3">Carryout</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_609</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf</arg>&quot; line <arg fmt="%s" index="2">1224</arg>: Output port &lt;<arg fmt="%s" index="3">Carryout</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_610</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf</arg>&quot; line <arg fmt="%s" index="2">1092</arg>: Output port &lt;<arg fmt="%s" index="3">Output</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_609</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf</arg>&quot; line <arg fmt="%s" index="2">1224</arg>: Output port &lt;<arg fmt="%s" index="3">Output</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_610</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf</arg>&quot; line <arg fmt="%s" index="2">1099</arg>: Output port &lt;<arg fmt="%s" index="3">Carryout</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_610</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf</arg>&quot; line <arg fmt="%s" index="2">1231</arg>: Output port &lt;<arg fmt="%s" index="3">Carryout</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_611</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf</arg>&quot; line <arg fmt="%s" index="2">1099</arg>: Output port &lt;<arg fmt="%s" index="3">Output</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_610</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf</arg>&quot; line <arg fmt="%s" index="2">1231</arg>: Output port &lt;<arg fmt="%s" index="3">Output</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_611</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf</arg>&quot; line <arg fmt="%s" index="2">1106</arg>: Output port &lt;<arg fmt="%s" index="3">Carryout</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_611</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf</arg>&quot; line <arg fmt="%s" index="2">1238</arg>: Output port &lt;<arg fmt="%s" index="3">Carryout</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_612</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf</arg>&quot; line <arg fmt="%s" index="2">1106</arg>: Output port &lt;<arg fmt="%s" index="3">Output</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_611</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf</arg>&quot; line <arg fmt="%s" index="2">1238</arg>: Output port &lt;<arg fmt="%s" index="3">Output</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_612</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf</arg>&quot; line <arg fmt="%s" index="2">1113</arg>: Output port &lt;<arg fmt="%s" index="3">Carryout</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_612</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf</arg>&quot; line <arg fmt="%s" index="2">1245</arg>: Output port &lt;<arg fmt="%s" index="3">Carryout</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_613</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf</arg>&quot; line <arg fmt="%s" index="2">1113</arg>: Output port &lt;<arg fmt="%s" index="3">Output</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_612</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf</arg>&quot; line <arg fmt="%s" index="2">1245</arg>: Output port &lt;<arg fmt="%s" index="3">Output</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_613</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf</arg>&quot; line <arg fmt="%s" index="2">1120</arg>: Output port &lt;<arg fmt="%s" index="3">Carryout</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_613</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf</arg>&quot; line <arg fmt="%s" index="2">1252</arg>: Output port &lt;<arg fmt="%s" index="3">Carryout</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_614</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf</arg>&quot; line <arg fmt="%s" index="2">1120</arg>: Output port &lt;<arg fmt="%s" index="3">Output</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_613</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf</arg>&quot; line <arg fmt="%s" index="2">1252</arg>: Output port &lt;<arg fmt="%s" index="3">Output</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_614</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf</arg>&quot; line <arg fmt="%s" index="2">1127</arg>: Output port &lt;<arg fmt="%s" index="3">Carryout</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_614</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf</arg>&quot; line <arg fmt="%s" index="2">1297</arg>: Output port &lt;<arg fmt="%s" index="3">Carryout</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_623</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ise/XilinxFiles/CMSC-313-project-2/GeneralPurposeProcessor_skeleton/GPP.vhf</arg>&quot; line <arg fmt="%s" index="2">1127</arg>: Output port &lt;<arg fmt="%s" index="3">Output</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_614</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">B&lt;0:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">BusWidth</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="37" delta="old" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">BusWidth</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">OPCODE&lt;2:2&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">OPCODE&lt;2:2&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="info" file="Xst" num="3231" delta="old" >The small RAM &lt;<arg fmt="%s" index="1">Mram_o</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+<msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram_o</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
 </msg>
 
 </messages>

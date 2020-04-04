@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : proj1OR8to8.vhf
--- /___/   /\     Timestamp : 02/21/2020 10:24:16
+-- /___/   /\     Timestamp : 02/21/2020 16:22:48
 -- \   \  /  \ 
 --  \___\/\___\ 
 --

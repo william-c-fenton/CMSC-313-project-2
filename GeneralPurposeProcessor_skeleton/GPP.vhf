@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : GPP.vhf
--- /___/   /\     Timestamp : 02/21/2020 10:24:13
+-- /___/   /\     Timestamp : 02/21/2020 16:22:45
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -2744,6 +2744,8 @@ architecture BEHAVIORAL of Instruction_Decoder_MUSER_GPP is
    attribute BOX_TYPE   : string ;
    attribute HU_SET     : string ;
    signal one             : std_logic;
+   signal XLXN_2          : std_logic;
+   signal XLXN_5          : std_logic;
    signal zero            : std_logic;
    signal capture_Z_DUMMY : std_logic;
    component VCC
@@ -2778,6 +2780,19 @@ architecture BEHAVIORAL of Instruction_Decoder_MUSER_GPP is
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
+   component AND2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
+   
+   component INV
+      port ( I : in    std_logic; 
+             O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of INV : component is "BLACK_BOX";
+   
    attribute HU_SET of XLXI_29 : label is "XLXI_29_34";
    attribute HU_SET of XLXI_30 : label is "XLXI_30_35";
 begin
@@ -2800,7 +2815,7 @@ begin
                 E=>one,
                 S0=>OPCODE(0),
                 S1=>OPCODE(1),
-                S2=>OPCODE(3),
+                S2=>XLXN_5,
                 O=>capture_C);
    
    XLXI_30 : M8_1E_HXILINX_GPP
@@ -2815,12 +2830,21 @@ begin
                 E=>one,
                 S0=>OPCODE(0),
                 S1=>OPCODE(1),
-                S2=>OPCODE(3),
+                S2=>XLXN_5,
                 O=>capture_Z_DUMMY);
    
    XLXI_31 : BUF
       port map (I=>capture_Z_DUMMY,
                 O=>capture_N);
+   
+   XLXI_32 : AND2
+      port map (I0=>XLXN_2,
+                I1=>OPCODE(2),
+                O=>XLXN_5);
+   
+   XLXI_33 : INV
+      port map (I=>OPCODE(3),
+                O=>XLXN_2);
    
 end BEHAVIORAL;
 

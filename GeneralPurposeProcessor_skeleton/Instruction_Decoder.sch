@@ -12,9 +12,12 @@
         <signal name="one" />
         <signal name="zero" />
         <signal name="OPCODE(3:0)" />
-        <signal name="OPCODE(3)" />
         <signal name="OPCODE(1)" />
         <signal name="OPCODE(0)" />
+        <signal name="OPCODE(2)" />
+        <signal name="XLXN_2" />
+        <signal name="OPCODE(3)" />
+        <signal name="XLXN_5" />
         <port polarity="Output" name="capture_C" />
         <port polarity="Output" name="capture_Z" />
         <port polarity="Output" name="capture_N" />
@@ -70,6 +73,25 @@
             <line x2="64" y1="-32" y2="-64" x1="128" />
             <line x2="64" y1="-64" y2="0" x1="64" />
         </blockdef>
+        <blockdef name="and2">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-64" y2="-64" x1="0" />
+            <line x2="64" y1="-128" y2="-128" x1="0" />
+            <line x2="192" y1="-96" y2="-96" x1="256" />
+            <arc ex="144" ey="-144" sx="144" sy="-48" r="48" cx="144" cy="-96" />
+            <line x2="64" y1="-48" y2="-48" x1="144" />
+            <line x2="144" y1="-144" y2="-144" x1="64" />
+            <line x2="64" y1="-48" y2="-144" x1="64" />
+        </blockdef>
+        <blockdef name="inv">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-32" y2="-32" x1="0" />
+            <line x2="160" y1="-32" y2="-32" x1="224" />
+            <line x2="128" y1="-64" y2="-32" x1="64" />
+            <line x2="64" y1="-32" y2="0" x1="128" />
+            <line x2="64" y1="0" y2="-64" x1="64" />
+            <circle r="16" cx="144" cy="-32" />
+        </blockdef>
         <block symbolname="vcc" name="XLXI_27">
             <blockpin signalname="one" name="P" />
         </block>
@@ -88,7 +110,7 @@
             <blockpin signalname="one" name="E" />
             <blockpin signalname="OPCODE(0)" name="S0" />
             <blockpin signalname="OPCODE(1)" name="S1" />
-            <blockpin signalname="OPCODE(3)" name="S2" />
+            <blockpin signalname="XLXN_5" name="S2" />
             <blockpin signalname="capture_C" name="O" />
         </block>
         <block symbolname="m8_1e" name="XLXI_30">
@@ -103,12 +125,21 @@
             <blockpin signalname="one" name="E" />
             <blockpin signalname="OPCODE(0)" name="S0" />
             <blockpin signalname="OPCODE(1)" name="S1" />
-            <blockpin signalname="OPCODE(3)" name="S2" />
+            <blockpin signalname="XLXN_5" name="S2" />
             <blockpin signalname="capture_Z" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_31">
             <blockpin signalname="capture_Z" name="I" />
             <blockpin signalname="capture_N" name="O" />
+        </block>
+        <block symbolname="and2" name="XLXI_32">
+            <blockpin signalname="XLXN_2" name="I0" />
+            <blockpin signalname="OPCODE(2)" name="I1" />
+            <blockpin signalname="XLXN_5" name="O" />
+        </block>
+        <block symbolname="inv" name="XLXI_33">
+            <blockpin signalname="OPCODE(3)" name="I" />
+            <blockpin signalname="XLXN_2" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -190,7 +221,8 @@
         <instance x="144" y="1152" name="XLXI_28" orien="R0" />
         <text style="fontsize:36;fontname:Arial" x="448" y="620">3-bit Constants</text>
         <branch name="OPCODE(3:0)">
-            <wire x2="592" y1="1696" y2="1696" x1="512" />
+            <wire x2="544" y1="1696" y2="1696" x1="512" />
+            <wire x2="592" y1="1696" y2="1696" x1="544" />
             <wire x2="656" y1="1696" y2="1696" x1="592" />
             <wire x2="720" y1="1696" y2="1696" x1="656" />
             <wire x2="848" y1="1696" y2="1696" x1="720" />
@@ -201,14 +233,6 @@
         <bustap x2="592" y1="1696" y2="1600" x1="592" />
         <bustap x2="656" y1="1696" y2="1600" x1="656" />
         <bustap x2="720" y1="1696" y2="1600" x1="720" />
-        <branch name="OPCODE(3)">
-            <wire x2="720" y1="1536" y2="1600" x1="720" />
-            <wire x2="800" y1="1536" y2="1536" x1="720" />
-            <wire x2="800" y1="1536" y2="1808" x1="800" />
-            <wire x2="1456" y1="1808" y2="1808" x1="800" />
-            <wire x2="1488" y1="848" y2="848" x1="800" />
-            <wire x2="800" y1="848" y2="1536" x1="800" />
-        </branch>
         <branch name="OPCODE(1)">
             <wire x2="576" y1="784" y2="1536" x1="576" />
             <wire x2="656" y1="1536" y2="1536" x1="576" />
@@ -231,5 +255,32 @@
             <wire x2="944" y1="720" y2="1680" x1="944" />
         </branch>
         <instance x="2704" y="1648" name="XLXI_31" orien="R0" />
+        <instance x="688" y="2032" name="XLXI_32" orien="R0" />
+        <instance x="384" y="2000" name="XLXI_33" orien="R0" />
+        <branch name="OPCODE(2)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="624" y="1568" type="branch" />
+            <wire x2="624" y1="1568" y2="1904" x1="624" />
+            <wire x2="688" y1="1904" y2="1904" x1="624" />
+            <wire x2="720" y1="1568" y2="1568" x1="624" />
+            <wire x2="720" y1="1568" y2="1600" x1="720" />
+        </branch>
+        <branch name="XLXN_2">
+            <wire x2="688" y1="1968" y2="1968" x1="608" />
+        </branch>
+        <bustap x2="544" y1="1696" y2="1792" x1="544" />
+        <branch name="OPCODE(3)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="320" y="1872" type="branch" />
+            <wire x2="320" y1="1872" y2="1968" x1="320" />
+            <wire x2="384" y1="1968" y2="1968" x1="320" />
+            <wire x2="544" y1="1872" y2="1872" x1="320" />
+            <wire x2="544" y1="1792" y2="1872" x1="544" />
+        </branch>
+        <branch name="XLXN_5">
+            <wire x2="1200" y1="1936" y2="1936" x1="944" />
+            <wire x2="1488" y1="848" y2="848" x1="1200" />
+            <wire x2="1200" y1="848" y2="1808" x1="1200" />
+            <wire x2="1200" y1="1808" y2="1936" x1="1200" />
+            <wire x2="1456" y1="1808" y2="1808" x1="1200" />
+        </branch>
     </sheet>
 </drawing>

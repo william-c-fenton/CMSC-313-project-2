@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : RegParallelLoad_1.vhf
--- /___/   /\     Timestamp : 02/21/2020 10:24:15
+-- /___/   /\     Timestamp : 02/21/2020 16:22:47
 -- \   \  /  \ 
 --  \___\/\___\ 
 --

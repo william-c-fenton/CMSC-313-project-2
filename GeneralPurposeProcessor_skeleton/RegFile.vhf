@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : RegFile.vhf
--- /___/   /\     Timestamp : 02/21/2020 10:24:11
+-- /___/   /\     Timestamp : 02/21/2020 16:22:43
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
